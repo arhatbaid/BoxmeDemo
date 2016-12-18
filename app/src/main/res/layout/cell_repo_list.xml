@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/very_small_padding"
+    android:transitionName="@string/tran_view"
+    android:id="@+id/llParent"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/viewDummy"
+        android:layout_width="@dimen/detail_circular_dummy_view"
+        android:layout_height="@dimen/detail_circular_dummy_view"
+        android:layout_margin="@dimen/common_padding"
+        android:background="@drawable/circular_view_purple"
+        android:transitionName="@string/tran_dummy_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblRepoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/detail_title"
+            android:transitionName="@string/tran_title" />
+
+        <TextView
+            android:id="@+id/lblRepoDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_padding"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="af dfhv fijngefgfjngvii ejngjnbje ejngejie"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/detail_desc"
+            android:transitionName="@string/tran_decs" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/huge_padding"
+            android:layout_marginRight="@dimen/huge_padding"
+            android:layout_marginTop="@dimen/common_padding"
+            android:background="@android:color/darker_gray" />
+
+
+    </LinearLayout>
+</LinearLayout>

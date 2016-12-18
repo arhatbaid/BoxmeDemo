@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/act_start_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.arhatbaid.boxmedemo.ActStartUp">
+
+    <View
+        android:id="@+id/viewDummy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/llMountainImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewDummy"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/imgMountain"
+            android:layout_width="@dimen/login_mountain_width"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/mountain"
+            android:transitionName="@string/tran_mountain" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="@dimen/login_btn_width"
+        android:layout_height="@dimen/login_btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/very_huge_padding"
+        android:background="@drawable/rounded_button_signup"
+        android:text="@string/btn_login"
+        android:textColor="@color/background"
+        android:transitionName="@string/tran_mountain" />
+</RelativeLayout>

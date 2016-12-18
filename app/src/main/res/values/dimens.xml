@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!--Padding and Margin-->
+    <dimen name="very_small_padding">5dp</dimen>
+    <dimen name="small_padding">10dp</dimen>
+    <dimen name="common_padding">15dp</dimen>
+    <dimen name="big_padding">20dp</dimen>
+    <dimen name="huge_padding">25dp</dimen>
+    <dimen name="very_huge_padding">35dp</dimen>
+
+
+    <!--Act Start up-->
+    <dimen name="login_btn_width">120dp</dimen>
+    <dimen name="login_btn_height">40dp</dimen>
+    <dimen name="login_mountain_width">170dp</dimen>
+
+
+    <!--Act Login-->
+    <dimen name="card_view">200dp</dimen>
+    <dimen name="card_view_corner_radius">5dp</dimen>
+
+    <!--Act Repo Detail-->
+    <dimen name="detail_dummy_view">80dp</dimen>
+    <dimen name="detail_title">20dp</dimen>
+    <dimen name="detail_desc">16dp</dimen>
+    <dimen name="detail_count">14dp</dimen>
+    <dimen name="user_image">50dp</dimen>
+    <dimen name="detail_count_image">20dp</dimen>
+    <dimen name="detail_circular_dummy_view">80dp</dimen>
+
+</resources>

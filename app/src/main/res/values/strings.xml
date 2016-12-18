@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Boxme Demo</string>
+
+    <string name="no_internet">Please check you internet connection</string>
+
+    <!--Login-->
+    <string name="btn_login">Login</string>
+    <string name="btn_done">Done</string>
+    <string name="tran_sign_up">trans sign up</string>
+    <string name="tran_mountain">trans mountain</string>
+    <string name="tran_list_body">trans list body</string>
+    <string name="tran_toolbar">trans toolbar</string>
+
+    <!--Login Screen-->
+    <string name="username_email">Username</string>
+    <string name="password">Password</string>
+
+    <!--Act List-->
+    <string name="tran_fab">trans fab</string>
+
+    <!--Detail Screen-->
+    <string name="tran_view">trans view</string>
+    <string name="tran_title">trans title</string>
+    <string name="tran_decs">trans desc</string>
+    <string name="tran_dummy_view">trans dummy view</string>
+    <string name="open_git">View in browser</string>
+
+</resources>
