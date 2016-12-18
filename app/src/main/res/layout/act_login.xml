@@ -68,7 +68,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/username_email"
-                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
                     android:nextFocusDown="@+id/txt_password" />
             </android.support.design.widget.TextInputLayout>
             <!--

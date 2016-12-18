@@ -8,9 +8,12 @@ import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.transition.Transition;
 import android.util.Pair;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.arhatbaid.boxmedemo.utils.AppHelper;
@@ -28,8 +31,8 @@ public class ActLogin extends AppCompatActivity implements
 
 
     private Button btnDone = null;
-    private TextInputLayout ipUsername, ipPassword;
-    private EditText txtUsername, txtPassword;
+    private TextInputLayout ipUsername;
+    private EditText txtUsername;
     private ProgressDialog progressDialog = null;
 
 
@@ -52,6 +55,24 @@ public class ActLogin extends AppCompatActivity implements
         btnDone.setOnClickListener(this);
         final Transition transition = getWindow().getSharedElementEnterTransition();
         transition.addListener(this);
+
+        txtUsername.setOnEditorActionListener(new EditText.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView textView, int actionId, KeyEvent keyEvent) {
+                if (actionId == EditorInfo.IME_ACTION_DONE) {
+                    if (verify()) {
+                        if (AppHelper.isNetConnected(ActLogin.this)) {
+                            gitLogin();
+                        } else {
+                            Toast.makeText(ActLogin.this, getString(R.string.no_internet), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        });
     }
 
     @Override
@@ -128,6 +149,7 @@ public class ActLogin extends AppCompatActivity implements
                     ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(ActLogin.this, p1, p2, p3);
                     startActivity(i, transitionActivityOptions.toBundle());
                 } catch (Exception e) {
+                    Toast.makeText(ActLogin.this, "Please check your username!!!", Toast.LENGTH_SHORT).show();
                 }
             }
 
