@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Boxme Demo</string>
+    <string name="app_name">App Demo</string>
 
     <string name="no_internet">Please check you internet connection</string>
 
@@ -12,7 +12,7 @@
     <string name="tran_toolbar">trans toolbar</string>
 
     <!--Login Screen-->
-    <string name="username_email">Username</string>
+    <string name="username_email">GitHub username</string>
     <string name="password">Password</string>
 
     <!--Act List-->
